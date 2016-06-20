@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>weather</title>
+	<link href="/css/index.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body class="weather"> 
+  
+  <div class="container">
+
+  <center>
+  <div class="box">
+    <div class="top">
+      <% if @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "partlycloudy" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "mostlycloudy" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "partlysunny" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "mostlysunny" %>
+        <img src="../images/mostlycloudy.png">
+      <% elsif @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "chancetstorms" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "tstorms" %>
+        <img src="../images/thunder.png">
+       <% elsif @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "chancerain" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "rain" %>
+        <img src="../images/rainy.png">
+      <% elsif @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "chanceclear" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "clear" %>
+        <img class="sunny" src="../images/sunny.png">
+      <% elsif @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "cloudy" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "fog" || @w_api.conditions_for(@state, @city)["current_observation"]["icon"] == "hazy" %>
+        <img src="../images/cloudy.png">
+      <% elsif @w_api.conditions_for(@state, @city)["current_observation"]["icon"].include?("flurries") || @w_api.conditions_for(@state, @city)["current_observation"]["icon"].include?("sleet") || @w_api.conditions_for(@state, @city)["current_observation"]["icon"].include?("snow") %>
+        <img src="../images/cloudy.png">
+      <% else %>
+        <img src="../images/sunny.png">
+      <% end %>
+    </div>
+    <div class="bottom">
+      <h1><%= @w_api.conditions_for(@state, @city)["current_observation"]["temp_f"].to_i %>°F</h1>
+      <h2><%= @w_api.conditions_for(@state, @city)["current_observation"]["display_location"]["city"].downcase %></h2>
+      <div class="highlow">
+        <p>HIGH: <%= @weather.today.high.f %>°F</p>
+        <p>LOW: <%= @weather.today
+        .low.f %>°F</p>
+      </div>
+    </div>
+  </div>
+  </center>
+
+
+  </div>
+
+</body>
+</html>

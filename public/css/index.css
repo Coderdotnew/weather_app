@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,600,800);
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+div.container {
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*WEATHER PAGE*/
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.05)
+  }
+  75% {
+    transform: scale(0.95)
+  }
+  100% {
+   transform: scale(1)
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-top: 100px;
+  }
+  50% {
+    margin-top: -15px;
+  }
+  75% {
+    margin-top: 15px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.weather {
+  margin-top: 0 !important;
+  background: #EFEFEF;
+  overflow: hidden;
+}
+
+.weather .box {
+  width: 300px;
+  height: 400px;
+  min-width: 300px;
+  min-height: 400px;
+  margin: 15vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  background: none;
+  overflow: hidden;
+  animation: appear 700ms ease-out forwards;
+}
+
+.weather .top {
+  height: 55%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  background: lightblue;
+  position: relative;
+}
+
+.weather .bottom {
+  height: 45%;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  background: white;
+}
+
+.weather .highlow {
+  margin-top: 200px;
+  width: 80px;
+  height: 75px;
+  float: right;
+  white-space: nowrap;
+  padding-top: 15px;
+}
+
+.weather h1 {
+  font-family: "Work Sans";
+  font-weight: 200;
+  font-size: 55pt;
+  text-align: left;
+  letter-spacing: 3px;
+  padding: 20px 0 0 20px;
+  color: #7E7E7E;
+  animation: appear 700ms ease-out forwards;
+}
+
+.weather h2 {
+  font-family: "Work Sans";
+  font-weight: 400;
+  color: #AEAEAE;
+  font-size: 20pt;
+  letter-spacing: 2px;
+  float: left;
+  padding: 20px 25px 0 25px;
+  animation: appear 700ms ease-out forwards;
+}
+
+.weather p {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 10pt;
+  letter-spacing: 2px;
+  color: #CFCFCF;
+  line-height: 20px;
+}
+
+.weather img {
+  width: 175px;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.weather .box:hover .highlow {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 10pt;
+  color: #9C9C9C;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  float: right;
+  animation: slidein 500ms ease-out forwards;
+}
+
+.weather .sunny {
+  animation: spin 8s linear infinite;
+}
+
+
+
+
+
+

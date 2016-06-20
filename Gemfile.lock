@@ -1,0 +1,71 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.4.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    barometer (0.9.7)
+      addressable
+      choc_mool
+      httpclient
+      nokogiri
+      nori
+      tzinfo (>= 0.3.14)
+      virtus (>= 1.0.0)
+    choc_mool (0.0.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.11)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    httpclient (2.8.0)
+    ice_nine (0.11.2)
+    json (1.8.3)
+    mini_portile2 (2.1.0)
+    multi_xml (0.5.5)
+    nokogiri (1.6.8)
+      mini_portile2 (~> 2.1.0)
+      pkg-config (~> 1.1.7)
+    nori (2.6.0)
+    pkg-config (1.1.7)
+    rack (1.6.4)
+    rack-protection (1.5.3)
+      rack
+    shotgun (0.9.1)
+      rack (>= 1.0)
+    sinatra (1.4.7)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    thread_safe (0.3.5)
+    tilt (2.0.2)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+    wunderground (1.2.0)
+      addressable
+      httparty (> 0.6.0)
+      json (> 1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  barometer
+  bundler
+  json
+  shotgun
+  sinatra
+  wunderground
+
+BUNDLED WITH
+   1.12.3
