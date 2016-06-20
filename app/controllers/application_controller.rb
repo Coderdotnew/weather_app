@@ -22,6 +22,16 @@ class ApplicationController < Sinatra::Base
 		barometer = Barometer.new(@city)
 		@weather = barometer.measure
 
+		@city2 = params[:city2]
+		@state2 = params[:state2]
+		barometer2 = Barometer.new(@city2)
+		@weather2 = barometer2.measure
+
+		@city3 = params[:city3]
+		@state3 = params[:state3]
+		barometer3 = Barometer.new(@city3)
+		@weather3 = barometer3.measure
+
 		erb :weather
 	end
 
