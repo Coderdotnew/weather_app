@@ -23,23 +23,74 @@ div.container {
 }
 
 .index {
-  margin-top: 0 !important;
   background: #EFEFEF;
 }
 
 .index form {
   font-size: 20pt;
-  margin: auto;
-  margin-top: 75px;
+  margin: 10vh auto !important;
   border-radius: 15px;
   box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
   width: 400px;
-  height: 550px;
+  height: 570px;
   background: white;
+  animation: appear 700ms ease-out forwards;
 }
 
 .index form {
   margin: auto;
+}
+
+.index .top {
+  width: 100%;
+  height: 30%;
+  border-radius: 15px 15px 0 0;
+  background: #B5E1F4;
+}
+
+.index .bottom {
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.index .inputs {
+  margin: 0 auto;
+  width: 340px;
+  margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #c3c3c3;
+   letter-spacing: 3px;
+   padding-left: 5px;
+   font-weight: 200;
+   font-size: 20pt;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #c3c3c3;
+   letter-spacing: 3px;
+   padding-left: 5px;
+   font-weight: 200; 
+   font-size: 20pt;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #c3c3c3;
+   letter-spacing: 3px;
+   padding-left: 5px;
+   font-weight: 200;
+   font-size: 20pt;
+}
+
+:-ms-input-placeholder {  
+   color: #c3c3c3;
+   letter-spacing: 3px;
+   padding-left: 5px;
+   font-weight: 200;  
+   font-size: 20pt;
 }
 
 .index .city {
@@ -47,10 +98,13 @@ div.container {
   width: 230px;
   height: 50px;
   padding: 4px;
-  margin: 3px;
+  margin: 20px 4px 4px 7px;
   float: left;
+  color: #A1A1A1;
   letter-spacing: 3px;
-  box-shadow: inset 0 5px 6px 0px #888;
+  padding-left: 10px;
+  font-weight: 200;
+  font-size: 20pt;
   border-radius: 15px;
 }
 
@@ -59,21 +113,42 @@ div.container {
   width: 75px;
   height: 50px;
   padding: 4px;
-  margin: 3px;
+  margin: 20px 4px 4px 15px;
   text-align: center;
+  border-radius: 15px;
+  color: #A1A1A1;
+  letter-spacing: 3px;
+  font-weight: 200;
+  font-size: 20pt;
 }
 
-.index .submit {
+.index i {
   clear: both;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #AEAEAE;
+  font-size: 35pt;
+}
+
+.index i:hover {
+  color: #B5E1F4;
 }
 
 .index h1 {
   font-family: "Work Sans";
-  font-weight: 400;
-  font-size: 30pt;
-  color: #AEAEAE;
-  padding: 30px;
+  font-weight: 200;
+  font-size: 37pt;
+  color: white;
+  padding: 90px 30px 0 30px;
+  letter-spacing: 4px;
 }
+
+
+
+
+
+
 
 
 /*WEATHER PAGE*/
@@ -249,6 +324,19 @@ div.container {
   padding-bottom: 10px;
   float: right;
   animation: slidein 500ms ease-out forwards;
+}
+
+.weather i {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  color: #AEAEAE;
+  font-size: 40pt;
+  position: fixed;
+}
+
+.weather i:hover {
+  color: white;
 }
 
 

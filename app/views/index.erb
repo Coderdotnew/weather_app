@@ -3,6 +3,7 @@
 
   <head>
     <title>weather</title>
+    <link rel="icon" href="../images/sunny.png">
     <link href="/css/index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -14,22 +15,28 @@
 
     <div class="form">
       <center>
-      <h1>weather for...</h1>
       <form method="post" action="/weather">
-
-        <input class="city" type="text" name="city">
-        <input class="state" type="text" name="state">
-        <br> 
-        <input class="city" type="text" name="city2">
-        <input class="state" type="text" name="state2">
-        <br>
-        <input class="city" type="text" name="city3">
-        <input class="state" type="text" name="state3">
-        <br>
-        <input class="city" type="text" name="city4">
-        <input class="state" type="text" name="state4">
-        <br>
-        <input class='submit' type='submit' value="submit">
+        <div class="top">
+          <h1>weather for...</h1>
+        </div>
+        <div class="bottom">
+          <div class="inputs">
+            <input class="city" type="text" name="city" placeholder="city">
+            <input class="state" type="text" name="state">
+            <br> 
+            <input class="city" type="text" name="city2" placeholder="city">
+            <input class="state" type="text" name="state2">
+            <br>
+            <input class="city" type="text" name="city3" placeholder="city">
+            <input class="state" type="text" name="state3">
+            <br>
+            <input class="city" type="text" name="city4" placeholder="city">
+            <input class="state" type="text" name="state4">
+          </div>
+          <button type="submit">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
 
       </form>
       </center>
