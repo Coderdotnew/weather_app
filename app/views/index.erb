@@ -6,28 +6,41 @@
     <link href="/css/index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
 
-  <body> 
+  <body class="index"> 
 
 
-  
-
-
+    <div class="form">
+      <center>
+      <h1>weather for...</h1>
       <form method="post" action="/weather">
 
-        <input type="text" name="city">
-        <input type="text" name="state">
+        <input class="city" type="text" name="city">
+        <input class="state" type="text" name="state">
+        <br> 
+        <input class="city" type="text" name="city2">
+        <input class="state" type="text" name="state2">
         <br>
-        <input type="text" name="city2">
-        <input type="text" name="state2">
+        <input class="city" type="text" name="city3">
+        <input class="state" type="text" name="state3">
         <br>
-        <input type="text" name="city3">
-        <input type="text" name="state3">
+        <input class="city" type="text" name="city4">
+        <input class="state" type="text" name="state4">
+        <br>
+        <input class='submit' type='submit' value="submit">
 
-        <input class='submit' type='submit'>
       </form>
+      </center>
+    </div>
 
   </body>
 </html>
+
+
+
+
+
+
 

@@ -10,7 +10,6 @@
   background: transparent;
 }
 
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -21,6 +20,59 @@ div.container {
 	height: 100% !important;
 	margin: 0;
 	padding: 0;
+}
+
+.index {
+  margin-top: 0 !important;
+  background: #EFEFEF;
+}
+
+.index form {
+  font-size: 20pt;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  width: 400px;
+  height: 550px;
+  background: white;
+}
+
+.index form {
+  margin: auto;
+}
+
+.index .city {
+  background: #EFEFEF;
+  width: 230px;
+  height: 50px;
+  padding: 4px;
+  margin: 3px;
+  float: left;
+  letter-spacing: 3px;
+  box-shadow: inset 0 5px 6px 0px #888;
+  border-radius: 15px;
+}
+
+.index .state {
+  background: #EFEFEF;
+  width: 75px;
+  height: 50px;
+  padding: 4px;
+  margin: 3px;
+  text-align: center;
+}
+
+.index .submit {
+  clear: both;
+}
+
+.index h1 {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 30pt;
+  color: #AEAEAE;
+  padding: 30px;
 }
 
 
@@ -60,12 +112,17 @@ div.container {
   background: #EFEFEF;
 }
 
+.weather .container {
+  margin: auto;
+  margin-top: 10vmax;
+}
+
 .weather .box {
   width: 300px;
   height: 400px;
   min-width: 300px;
   min-height: 400px;
-  margin: 5vmax;
+  margin: 0 0 3vmax 4vmax;
   border-radius: 15px;
   box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
   background: none;
@@ -74,26 +131,12 @@ div.container {
   animation: appear 700ms ease-out forwards;
 }
 
-.weather .box2 {
+.weather .box2, .box3, .box4 {
   width: 300px;
   height: 400px;
   min-width: 300px;
   min-height: 400px;
-  margin: 5vmax;
-  border-radius: 15px;
-  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
-  background: none;
-  overflow: hidden;
-  float: left;
-  animation: appear 700ms ease-out forwards;
-}
-
-.weather .box3 {
-  width: 300px;
-  height: 400px;
-  min-width: 300px;
-  min-height: 400px;
-  margin: 5vmax;
+  margin: 0 0 3vmax 3vmax;
   border-radius: 15px;
   box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
   background: none;
@@ -106,7 +149,7 @@ div.container {
   height: 55%;
   width: 100%;
   border-radius: 15px 15px 0 0;
-  background: lightblue;
+  background: #B5E1F4;
   position: relative;
   line-height: 220px;
 }
@@ -175,9 +218,37 @@ div.container {
   animation: slidein 500ms ease-out forwards;
 }
 
+.weather .box2:hover .highlow {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 10pt;
+  color: #9C9C9C;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  float: right;
+  animation: slidein 500ms ease-out forwards;
+}
 
+.weather .box3:hover .highlow {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 10pt;
+  color: #9C9C9C;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  float: right;
+  animation: slidein 500ms ease-out forwards;
+}
 
-
-
+.weather .box4:hover .highlow {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 10pt;
+  color: #9C9C9C;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  float: right;
+  animation: slidein 500ms ease-out forwards;
+}
 
 

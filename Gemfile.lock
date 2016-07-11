@@ -15,6 +15,8 @@ GEM
       tzinfo (>= 0.3.14)
       virtus (>= 1.0.0)
     choc_mool (0.0.1)
+    city-state (0.0.13)
+      rubyzip (~> 1.1)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     descendants_tracker (0.0.4)
@@ -36,6 +38,7 @@ GEM
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rubyzip (1.2.0)
     shotgun (0.9.1)
       rack (>= 1.0)
     sinatra (1.4.7)
@@ -62,6 +65,7 @@ PLATFORMS
 DEPENDENCIES
   barometer
   bundler
+  city-state
   json
   shotgun
   sinatra
